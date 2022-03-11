@@ -47,8 +47,6 @@
 
                                         <!-- awal email -->
                                         <div class="form-group">
-                                            <!-- <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp"
-                                                placeholder="Username"> -->
                                             <input id="exampleInputEmail" type="email" class="form-control form-control-user @error('email') is-invalid @enderror" 
                                                 name="email" value="{{ old('email') }}" required autocomplete="email" autofocus  placeholder="{{ __('E-Mail Address') }}">
                                             
@@ -62,12 +60,10 @@
 
                                         <!-- awal password -->
                                         <div class="form-group">
-                                            <input type="password" class="form-control form-control-user @error('password') is-invalid @enderror" 
-                                                id="exampleInputPassword" required autocomplete="current-password" placeholder="{{ __('Password') }}">
+
+                                        <input id="password" type="password" class="form-control form-control-user @error('password') is-invalid @enderror"
+                                         name="password" required autocomplete="current-password">
                                         
-                                                
-                                                   <!-- <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" 
-                                        name="password" required autocomplete="current-password"> -->
                                                 @error('password')
                                                     <span class="invalid-feedback" role="alert">
                                                         <strong>{{ $message }}</strong>

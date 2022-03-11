@@ -49,7 +49,6 @@
                                         <input type="text" class="form-control form-control-user @error('name') is-invalid @enderror" id="name" name="name"  value="{{ old('name') }}" required autocomplete="name" autofocus
                                             placeholder="{{ __('Username') }}">
 
- <!-- <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>                   -->
                                             @error('name')
                                             <span class="invalid-feedback" role="alert">
                                                 <strong>{{ $message }}</strong>
@@ -61,8 +60,9 @@
 
                                 <!-- email -->
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-user @error('email') is-invalid @enderror" id="email" value="{{ old('email') }}" required autocomplete="email"
-                                        placeholder="{{ __('E-Mail Address') }}">
+                                    <input id="email" type="email" class="form-control form-control-user @error('email') is-invalid @enderror" name="email"
+                                        value="{{ old('email') }}" required autocomplete="email" placeholder="{{ __('E-Mail Address') }}">                        
+
                                         @error('email')
                                         <span class="invalid-feedback" role="alert">
                                             <strong>{{ $message }}</strong>
@@ -74,8 +74,6 @@
                                 <!-- password -->
                                 <div class="form-group row">
                                     <div class="col-sm-6 mb-3 mb-sm-0">
-                                        <!-- <input type="password" class="form-control form-control-user"
-                                            id="exampleInputPassword" placeholder="{{ __('Password') }}"> -->
                                             <input id="password" type="password" class="form-control form-control-user @error('password') is-invalid @enderror"
                                              name="password" required autocomplete="new-password " placeholder="{{ __('Password') }}">
                                            
@@ -87,26 +85,13 @@
                                     </div>
 
                                     <div class="col-sm-6">
-                                        <!-- <input type="password" class="form-control form-control-user"
-                                            id="exampleRepeatPassword" placeholder="{{ __('Confirm Password') }}"> -->
                                             <input id="password-confirm" type="password" class="form-control form-control-user" 
                                             name="password_confirmation" required autocomplete="new-password" placeholder="{{ __('Confirm Password') }}">
                                     </div>
                                 </div>
-                                <!-- end password -->
-                                <!-- <a href="login.html" class="btn btn-primary btn-user btn-block">
-                                    Register Account
-                                </a> -->
                                 <button type="submit" class="btn btn-primary btn-user btn-block">
                                     {{ __('Register') }}
                                 </button>
-                                <!-- <hr>
-                                <a href="index.html" class="btn btn-google btn-user btn-block">
-                                    <i class="fab fa-google fa-fw"></i> Register with Google
-                                </a>
-                                <a href="index.html" class="btn btn-facebook btn-user btn-block">
-                                    <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
-                                </a> -->
                             </form>
                             <hr>
                             <!-- forgot password -->
