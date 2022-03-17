@@ -162,6 +162,215 @@
                                             </div>
                                             <button class="text-white btn btn-primary font-italic pull-right" type="button" title="unduh"><i class="fa fa-download "></i>&emsp; Download.pdf</button>
                                         </div> 
+    <!-- Modal Tambah Data-->
+          <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                      <div class="modal-header">
+                              <h5 class="modal-title">Tambah data</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                  </button>
+                          </div>
+                  <div class="modal-body">
+                      <div class="container-fluid">
+                      <form action="" method="POST" enctype="multipart/form-data">
+                               
+                                <div class="row ">
+                                    <div class="col-md-6 ">
+                                        <div class="form-group ">
+                                            <label class="form-label "><b>Kode Barang</b></label>
+                                            <input type="text " class="form-control " placeholder="Masukkan Nama Barang * " id="name " name="nama " required=" " />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="form-group ">
+                                            <label class="form-label "><b>Nama Barang</b></label>
+                                            <input type="text " class="form-control " placeholder="Masukkan Faktur * " id="harga " name="harga " required=" " />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                    <div class="form-group ">
+                                            <label class="form-label "><b>Sat</b></label>
+                                            <input type="text " class="form-control " placeholder="Masukkan OPL No * " id="harga " name="harga " required=" " />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="form-group ">
+                                            <label class="form-label "><b>Sisa Seb Dikeluarkan</b></label>
+                                            <input type="text " class="form-control " placeholder="Masukkan Vol Faktur * " id="asal " name="asal " required=" " />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="form-group ">
+                                            <label class="form-label "><b>Diminta</b></label>
+                                            <input type="text " class="form-control " placeholder="Masukkan VOL Kenyataan * " id="desc " name="desc " required=" " />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="form-group ">
+                                            <label class="form-label "><b>Disetujui</b></label>
+                                            <input type="text " class="form-control " placeholder="Masukkan VOL Selisih * " id="desc " name="desc " required=" " />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="form-group ">
+                                            <label class="form-label "><b>Dikeluarkan</b></label>
+                                            <input type="text " class="form-control " placeholder="Masukkan Keterangan * " id="desc " name="desc " required=" " />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="form-group ">
+                                            <label class="form-label "><b>Harga Satuan</b></label>
+                                            <input type="text " class="form-control " placeholder="Masukkan Keterangan * " id="desc " name="desc " required=" " />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="form-group ">
+                                            <label class="form-label "><b>Jumlah</b></label>
+                                            <input type="text " class="form-control " placeholder="Masukkan Keterangan * " id="desc " name="desc " required=" " />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="form-group ">
+                                            <label class="form-label "><b>No Rek</b></label>
+                                            <input type="text " class="form-control " placeholder="Masukkan Keterangan * " id="desc " name="desc " required=" " />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="form-group ">
+                                            <label class="form-label "><b>Obyek</b></label>
+                                            <input type="text " class="form-control " placeholder="Masukkan Keterangan * " id="desc " name="desc " required=" " />
+                                        </div>
+                                    </div>
+                                  </div>
+
+                               
+                                    <br>
+                                </form>
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+                      <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                      <button type="button" class="btn btn-primary">Simpan Data</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <script>
+          $('#exampleModal').on('show.bs.modal', event => {
+              var button = $(event.relatedTarget);
+              var modal = $(this);
+              // Use above variables to manipulate the DOM
+              
+          });
+      </script>
+
+       <!-- Modal Edit Data-->
+       <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                      <div class="modal-header">
+                              <h5 class="modal-title">Edit Data</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                  </button>
+                          </div>
+                  <div class="modal-body">
+                      <div class="container-fluid">
+                      <form action="" method="POST" enctype="multipart/form-data">
+                               
+                                <div class="row ">
+                                    <div class="col-md-6 ">
+                                        <div class="form-group ">
+                                            <label class="form-label "><b>Kode Barang</b></label>
+                                            <input type="text " class="form-control " placeholder="Masukkan Nama Barang * " id="name " name="nama " required=" " />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="form-group ">
+                                            <label class="form-label "><b>Nama Barang</b></label>
+                                            <input type="text " class="form-control " placeholder="Masukkan Faktur * " id="harga " name="harga " required=" " />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                    <div class="form-group ">
+                                            <label class="form-label "><b>Sat</b></label>
+                                            <input type="text " class="form-control " placeholder="Masukkan OPL No * " id="harga " name="harga " required=" " />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="form-group ">
+                                            <label class="form-label "><b>Sisa Seb Dikeluarkan</b></label>
+                                            <input type="text " class="form-control " placeholder="Masukkan Vol Faktur * " id="asal " name="asal " required=" " />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="form-group ">
+                                            <label class="form-label "><b>Diminta</b></label>
+                                            <input type="text " class="form-control " placeholder="Masukkan VOL Kenyataan * " id="desc " name="desc " required=" " />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="form-group ">
+                                            <label class="form-label "><b>Disetujui</b></label>
+                                            <input type="text " class="form-control " placeholder="Masukkan VOL Selisih * " id="desc " name="desc " required=" " />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="form-group ">
+                                            <label class="form-label "><b>Dikeluarkan</b></label>
+                                            <input type="text " class="form-control " placeholder="Masukkan Keterangan * " id="desc " name="desc " required=" " />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="form-group ">
+                                            <label class="form-label "><b>Harga Satuan</b></label>
+                                            <input type="text " class="form-control " placeholder="Masukkan Keterangan * " id="desc " name="desc " required=" " />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="form-group ">
+                                            <label class="form-label "><b>Jumlah</b></label>
+                                            <input type="text " class="form-control " placeholder="Masukkan Keterangan * " id="desc " name="desc " required=" " />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="form-group ">
+                                            <label class="form-label "><b>No Rek</b></label>
+                                            <input type="text " class="form-control " placeholder="Masukkan Keterangan * " id="desc " name="desc " required=" " />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="form-group ">
+                                            <label class="form-label "><b>Obyek</b></label>
+                                            <input type="text " class="form-control " placeholder="Masukkan Keterangan * " id="desc " name="desc " required=" " />
+                                        </div>
+                                    </div>
+                                  </div>
+
+                               
+                                    <br>
+                                </form>
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+                      <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                      <button type="button" class="btn btn-primary">Simpan Data</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <script>
+          $('#exampleModal').on('show.bs.modal', event => {
+              var button = $(event.relatedTarget);
+              var modal = $(this);
+              // Use above variables to manipulate the DOM
+              
+          });
+      </script>
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
@@ -284,6 +493,18 @@
 
     <!-- Page level custom scripts -->
     <script src="admin/js/demo/datatables-demo.js"></script>
+    <script>
+      
+      $('#dataTable').DataTable( {
+        "scrollX": false
+            "columnDefs":[
+                {
+                    "orderable":false,
+                    "targets":[10,11,12]
+                }
+            ]
+        } );
+  </script>
 
 </body>
 
