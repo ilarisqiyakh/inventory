@@ -61,7 +61,7 @@
             </li>
 
             <!-- Nav Item - Tables -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="http://127.0.0.1:8000/barang_masuk">
                     <i class="fas fa-fw fa-table"></i>
                     <span>Barang Masuk</span></a>
@@ -84,7 +84,7 @@
             <!-- Nav Item - Tables -->
             <li class="nav-item">
                 <a class="nav-link" href="http://127.0.0.1:8000/laporan">
-                    <i class="fas fa-fw fa-file"></i>
+                <i class="fas fa-fw fa-file"></i>
                     <span>Laporan</span></a>
             </li>
             <!-- Divider -->
@@ -143,12 +143,12 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Form Input Barang Masuk</h1>
+                    <!-- <h1 class="h3 mb-2 text-gray-800">Form Bon Barang</h1> -->
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">Data Barang Masuk</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Laporan Bon Barang</h6>
                         </div>
                         <div class="card-body">
                         <div class="row-3 pull-right">
@@ -160,181 +160,58 @@
                                                     </div>
                                                 </form>
                                             </div>
-                                            <!-- <button class="text-white btn btn-primary font-italic pull-left" type="button" title="unduh"><i class="fa fa-download "></i>&emsp; Download.pdf</button> -->
+                                            <button class="text-white btn btn-primary font-italic pull-right" type="button" title="unduh"><i class="fa fa-download "></i>&emsp; Download.pdf</button>
                                         </div> 
-    <!-- Modal Tambah Data-->
-      <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                      <div class="modal-header">
-                              <h5 class="modal-title">Tambah data</h5>
-                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                  </button>
-                          </div>
-                  <div class="modal-body">
-                      <div class="container-fluid">
-                      <form action="" method="POST" enctype="multipart/form-data">
-                               
-                                <div class="row ">
-                                    <div class="col-md-6 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Nama Barang</b></label>
-                                            <input type="text " class="form-control " placeholder="Masukkan Nama Barang * " id="name " name="nama " required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Sat</b></label>
-                                            <input type="text " class="form-control " placeholder="Satuan * " id="harga " name="harga " required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 ">
-                                    <div class="form-group ">
-                                            <label class="form-label "><b>Volume Faktur</b></label>
-                                            <input type="text " class="form-control " placeholder="Masukkan Vol faktur * " id="harga " name="harga " required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Jumlah Barang</b></label>
-                                            <input type="text " class="form-control " placeholder="Masukkan Jumlah Barang * " id="asal " name="asal " required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Selisih Barang</b></label>
-                                            <input type="text " class="form-control " placeholder="Masukkan Selisih Barang * " id="desc " name="desc " required=" " />
-                                        </div>
-                                    </div>
-                                  </div>
-
-                               
-                                    <br>
-                                </form>
-                      </div>
-                  </div>
-                  <div class="modal-footer">
-                      <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-                      <button type="button" class="btn btn-primary">Simpan Data</button>
-                  </div>
-              </div>
-          </div>
-      </div>
-
-      <script>
-          $('#exampleModal').on('show.bs.modal', event => {
-              var button = $(event.relatedTarget);
-              var modal = $(this);
-              // Use above variables to manipulate the DOM
-              
-          });
-      </script>
-
-      <!-- Modal Edit Data-->
-      <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                      <div class="modal-header">
-                              <h5 class="modal-title">Edit Data</h5>
-                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                      <span aria-hidden="true">&times;</span>
-                                  </button>
-                          </div>
-                  <div class="modal-body">
-                      <div class="container-fluid">
-                      <form action="" method="POST" enctype="multipart/form-data">
-                               
-                                <div class="row ">
-                                    <div class="col-md-6 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Nama Barang</b></label>
-                                            <input type="text " class="form-control " placeholder="Masukkan Nama Barang * " id="name " name="nama " required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Sat</b></label>
-                                            <input type="text " class="form-control " placeholder="Satuan * " id="harga " name="harga " required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 ">
-                                    <div class="form-group ">
-                                            <label class="form-label "><b>Volume Faktur</b></label>
-                                            <input type="text " class="form-control " placeholder="Masukkan Vol faktur * " id="harga " name="harga " required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Jumlah Barang</b></label>
-                                            <input type="text " class="form-control " placeholder="Masukkan Jumlah Barang * " id="asal " name="asal " required=" " />
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 ">
-                                        <div class="form-group ">
-                                            <label class="form-label "><b>Selisih Barang</b></label>
-                                            <input type="text " class="form-control " placeholder="Masukkan Selisih Barang * " id="desc " name="desc " required=" " />
-                                        </div>
-                                    </div>
-                                  </div>
-
-                               
-                                    <br>
-                                </form>
-                      </div>
-                  </div>
-                  <div class="modal-footer">
-                      <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
-                      <button type="button" class="btn btn-primary">Simpan Data</button>
-                  </div>
-              </div>
-          </div>
-      </div>
-
-      <script>
-          $('#exampleModal').on('show.bs.modal', event => {
-              var button = $(event.relatedTarget);
-              var modal = $(this);
-              // Use above variables to manipulate the DOM
-              
-          });
-      </script>
+   
+      
                             <div class="table-responsive">
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>NO</th>
+                                            <th>Kode Barang</th>
                                             <th>Nama Barang</th>
                                             <th>Sat</th>
-                                            <th>Volume Faktur</th>
-                                            <th>Jumlah Barang</th>
-                                            <th>Selisih Barang</th>
-                                            <th>Action</th>
+                                            <th>Sisa Seb Dikeluarkan</th>
+                                            <th>Diminta</th>
+                                            <th>Disetujui</th>
+                                            <th>Dikeluarkan</th>
+                                            <th>harga Satuan</th>
+                                            <th>Jumlah</th>
+                                            <th>No Rek</th>
+                                            <th>Obyek</th>
+                                           
                                         </tr>
                                     </thead>
                                     <tfoot>
                                         <tr>
-                                        <th>NO</th>
+                                            <th>Kode Barang</th>
                                             <th>Nama Barang</th>
                                             <th>Sat</th>
-                                            <th>Volume Faktur</th>
-                                            <th>Jumlah Barang</th>
-                                            <th>Selisih Barang</th>
-                                            <th>Action</th>
+                                            <th>Sisa Seb Dikeluarkan</th>
+                                            <th>Diminta</th>
+                                            <th>Disetujui</th>
+                                            <th>Dikeluarkan</th>
+                                            <th>harga Satuan</th>
+                                            <th>Jumlah</th>
+                                            <th>No Rek</th>
+                                            <th>Obyek</th>
+                                           
                                         </tr>
                                     </tfoot>
                                     <tbody>
                                         <tr>
-                                            <td>1</td>
+                                            <td>IKO CF 20 BUU</td>
                                             <td>Bearing</td>
-                                            <td>pcs</td>
-                                            <td>61</td>
-                                            <td>6</td>
+                                            <td>PCS</td>
+                                            <td>9</td>
+                                            <td>5</td>
+                                            <td>5</td>
+                                            <td>5</td>
                                             <td></td>
-                                            <td>
-                                                <button class="text-white btn btn-success" data-toggle="modal" data-target="#modelId" type="button" title="tambah data"><i class="fas fa-plus"></i> </button>
-                                                <button class="text-white btn btn-primary" data-toggle="modal" data-target="#modelId" type="button" title="edit data"><i class="fas fa-pencil-alt"></i></button>
-                                                <button class="text-white btn btn-danger" type="button" title="hapus data"><i class="fas fa-trash-alt"> </button></td>
+                                            <td>5</td>
+                                            <td></td>
+                                            <td></td>
+                                            
                                         </tr>
                                     </tbody>
                                 </table>
@@ -352,7 +229,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2020</span>
+                        <span>Copyright &copy; Your Website 2022</span>
                     </div>
                 </div>
             </footer>
@@ -368,6 +245,7 @@
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
+
 
     <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"

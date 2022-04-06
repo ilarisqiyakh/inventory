@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Tables</title>
+    <title>SIMBarang IGG</title>
 
     <!-- Custom fonts for this template -->
     <link href="admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -160,7 +160,7 @@
                                                     </div>
                                                 </form>
                                             </div>
-                                            <button class="text-white btn btn-primary font-italic pull-right" type="button" title="unduh"><i class="fa fa-download "></i>&emsp; Download.pdf</button>
+                                            <!-- <button class="text-white btn btn-primary font-italic pull-right" type="button" title="unduh"><i class="fa fa-download "></i>&emsp; Download.pdf</button> -->
                                         </div> 
     <!-- Modal Tambah Data-->
           <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
@@ -419,8 +419,8 @@
                                             <td></td>
                                             <td></td>
                                             <td>
-                                                <button class="text-white btn btn-success" type="button" title="tambah data"><i class="fas fa-plus"></i> </button>
-                                                <button class="text-white btn btn-primary" type="button" title="edit data"><i class="fas fa-pencil-alt"></i></button>
+                                                <button class="text-white btn btn-success" data-toggle="modal" data-target="#modelId" type="button" title="tambah data"><i class="fas fa-plus"></i> </button>
+                                                <button class="text-white btn btn-primary" data-toggle="modal" data-target="#modelId" type="button" title="edit data"><i class="fas fa-pencil-alt"></i></button>
                                                 <button class="text-white btn btn-danger" type="button" title="hapus data"><i class="fas fa-trash-alt"> </button></td>
                                         </tr>
                                     </tbody>

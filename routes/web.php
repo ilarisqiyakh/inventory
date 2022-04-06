@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -28,6 +29,18 @@ Route::get('/dashboard', function () {
 Route::get('/master_barang', function () {
     return view('master_barang');
 });
+Route::get('/detail_master_barang', function () {
+    return view('detail_master_barang');
+});
+Route::get('/detail_berita_acara', function () {
+    return view('detail_berita_acara');
+});
+Route::get('/detail_bon_barang', function () {
+    return view('detail_bon_barang');
+});
+Route::get('/detail_barang_masuk', function () {
+    return view('detail_barang_masuk');
+});
 Route::get('/barang_masuk', function () {
     return view('barang_masuk');
 });
@@ -41,18 +54,19 @@ Route::get('laporan', function () {
     return view('laporan');
 });
 
-Auth::routes();
+// Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Auth::routes();
+// Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Auth::routes();
+// Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::group(['prefix'=>'admin','middleware'=>'auth'],function(){
-    Route::get('/','Admin\AdminController@index');
-});
+// Route::group(['prefix'=>'admin','middleware'=>'auth'],function(){
+//     Route::get('/','Admin\AdminController@index');
+// });
+// Route::get('/barang_masuk','barang_masukController@index');

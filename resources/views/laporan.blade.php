@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SIMBarangIGG - Laporan</title>
+    <title>SIMBarang IGG</title>
 
     <!-- Custom fonts for this template-->
     <link href="admin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -143,7 +143,74 @@
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Laporan</h1>
                     </div>
+    <!-- Modal Tambah Data-->
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                      <div class="modal-header">
+                              <h5 class="modal-title">Tambah data</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                  </button>
+                          </div>
+                  <div class="modal-body">
+                      <div class="container-fluid">
+                      <form action="" method="POST" enctype="multipart/form-data">
+                               
+                                <div class="row ">
+                                    <div class="col-md-6 ">
+                                        <div class="form-group ">
+                                            <label class="form-label "><b>Nama Barang</b></label>
+                                            <input type="text " class="form-control " placeholder="Masukkan Nama Barang * " id="name " name="nama " required=" " />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="form-group ">
+                                            <label class="form-label "><b>Sat</b></label>
+                                            <input type="text " class="form-control " placeholder="Satuan * " id="harga " name="harga " required=" " />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                    <div class="form-group ">
+                                            <label class="form-label "><b>Volume Faktur</b></label>
+                                            <input type="text " class="form-control " placeholder="Masukkan Vol faktur * " id="harga " name="harga " required=" " />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="form-group ">
+                                            <label class="form-label "><b>Jumlah Barang</b></label>
+                                            <input type="text " class="form-control " placeholder="Masukkan Jumlah Barang * " id="asal " name="asal " required=" " />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 ">
+                                        <div class="form-group ">
+                                            <label class="form-label "><b>Selisih Barang</b></label>
+                                            <input type="text " class="form-control " placeholder="Masukkan Selisih Barang * " id="desc " name="desc " required=" " />
+                                        </div>
+                                    </div>
+                                  </div>
 
+                               
+                                    <br>
+                                </form>
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+                      <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                      <button type="button" class="btn btn-primary">Simpan Data</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <script>
+          $('#exampleModal').on('show.bs.modal', event => {
+              var button = $(event.relatedTarget);
+              var modal = $(this);
+              // Use above variables to manipulate the DOM
+              
+          });
+      </script>
                     <!-- Content Row -->
                     <div class="row">
 
@@ -162,7 +229,9 @@
                                         </div>
                                     </div>
                                 </div>
-                               <div><center><button type="button" class="btn btn-outline-primary"><i class="fas fa-eye"></i>Lihat</button></center></div>
+                               <div><center>
+                                   <a href="{{url('/detail_master_barang')}}"><button type="button" class="btn btn-outline-primary" src ><i class="fas fa-eye"></i>Lihat</button></center></div></a>
+                               <!-- <button class="text-white btn btn-success" data-toggle="modal" data-target="#modelId" type="button" title="tambah data"><i class="fas fa-plus"></i> </button> -->
                             </div>
                         </div> 
 
@@ -181,7 +250,8 @@
                                         </div>
                                     </div>
                                 </div>
-                               <div><center><button type="button" class="btn btn-outline-primary"><i class="fas fa-eye"></i>Lihat</button></center></div>
+                               <div><center>
+                               <a href="{{url('/detail_barang_masuk')}}"><button type="button" class="btn btn-outline-primary"><i class="fas fa-eye"></i>Lihat</button></center></div></a>
                             </div>
                         </div> 
 
@@ -200,7 +270,8 @@
                                         </div>
                                     </div>
                                 </div>
-                               <div><center><button type="button" class="btn btn-outline-primary"><i class="fas fa-eye"></i>Lihat</button></center></div>
+                               <div>
+                               <a href="{{url('/detail_berita_acara')}}"><center><button type="button" class="btn btn-outline-primary"><i class="fas fa-eye"></i>Lihat</button></center></div></a>
                             </div>
                         </div> 
 
@@ -219,7 +290,8 @@
                                         </div>
                                     </div>
                                 </div>
-                               <div><center><button type="button" class="btn btn-outline-primary"><i class="fas fa-eye"></i>Lihat</button></center></div>
+                               <div>
+                               <a href="{{url('/detail_bon_barang')}}"><center><button type="button" class="btn btn-outline-primary"><i class="fas fa-eye"></i>Lihat</button></center></div></a>
                             </div>
                         </div> 
 

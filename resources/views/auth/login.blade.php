@@ -85,7 +85,7 @@
                                         <!-- login ye ges ye -->
                                         <button type="submit" class="btn btn-primary btn-user btn-block">{{ __('Login') }}</button>
                                         <!-- emd login -->
-                                        < a href="http://127.0.0.1:8000/dashboard"</a>
+                                        <a href="http://127.0.0.1:8000/dashboard"</a>
                                         
                                     </form>
                                         <!-- <hr>
